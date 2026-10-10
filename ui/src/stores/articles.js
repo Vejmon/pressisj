@@ -6,7 +6,6 @@ export const useArticleStore = defineStore('articles', () => {
     const currentPage = ref(null)
 
     const addResponse = (response) => {
-        console.log(response)
         currentPage.value = response
         data.value.push(...response._embedded.articles)
     }
@@ -15,7 +14,6 @@ export const useArticleStore = defineStore('articles', () => {
         if (currentPage.value?._embedded) {
             currentPage.value._embedded.articles = data.value;
         }
-        console.log('returnPage', returnPage)
         return returnPage
     }
     return { addResponse, getComplete }

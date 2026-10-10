@@ -3,16 +3,20 @@ import ArticlePage from "@/components/ArticlePage.vue";
 import {onMounted, onUnmounted, ref} from "vue";
 import {getData} from "@/utils/api.js"
 import ArticleSkeleton from "@/components/ArticleSkeleton.vue";
+import {useArticleStore} from "@/stores/articles.js";
 
-const loading = ref(true);
+
+const articleStore = useArticleStore();
+const loading = ref(articleStore.getComplete().value == null);
 const error = ref(false);
-const firstPage = ref({_embedded: {}, _links: {}, page: {}});
-
+const currentPage = ref(articleStore.getComplete().value);
 onMounted( async () => {
-  await getData("/articles")
+  if (currentPage.value != null) return;
+  await getData("/api/articles")
     .then(data => {
       error.value = false;
-      firstPage.value = data
+      currentPage.value = data
+      articleStore.addResponse(data)
   })
     .catch(() =>{
       error.value = true;
@@ -35,7 +39,7 @@ onUnmounted(() =>{
       <ArticleSkeleton class="gradient-fade"></ArticleSkeleton>
     </div>
     <p v-else-if="error">Hups, her har det skjedd en feil!</p>
-    <ArticlePage v-else v-bind="firstPage"/>
+    <ArticlePage v-else v-bind="currentPage" @updatePage="(val) => {articleStore.addResponse(val)}"/>
   </div>
 </template>
 
