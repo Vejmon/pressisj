@@ -17,11 +17,9 @@ export async function prepareApp() {
 // Boot the app after prepareApp finishes
 export async function bootstrap(app, router){
     const pinia = createPinia()
-    pinia.use(({ store }) => {
-        store.router = markRaw(router)
-    })
     await prepareApp()
     createApp(app)
         .use(router)
+        .use(pinia)
         .mount('#app')
 }
