@@ -12,9 +12,9 @@ export const handlers = [
       status: 'UP'
     })
   }),
-  http.get("/articles", async ({request}) => {
+  http.get("/api/articles", async ({request}) => {
     let page = new URL(request.url).searchParams.get("page");
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 300));
     if (!page || page === "0"){
       return HttpResponse.json(articles);
     }

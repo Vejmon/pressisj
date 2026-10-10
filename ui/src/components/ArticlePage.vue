@@ -4,6 +4,7 @@ import { useInfiniteScroll } from '@vueuse/core';
 import ArticlePreview from "@/components/ArticlePreview.vue";
 import {getData} from "@/utils/api.js";
 
+const emit = defineEmits(["updatePage"]);
 const props = defineProps({
   _embedded: {
     type: Object,
@@ -24,7 +25,6 @@ const error = ref(false);
 const currentLinks = ref(props._links);
 const data = ref(props._embedded.articles)
 
-// Define the function to load more data
 const loadMore = async () => {
   if (isLoading.value) return;
   isLoading.value = true;
@@ -33,6 +33,7 @@ const loadMore = async () => {
       .then((newItems) => {
         currentLinks.value = newItems._links
         data.value.push(...newItems._embedded.articles)
+        emit('updatePage', newItems)
       })
       .catch(() => {
         error.value = true;

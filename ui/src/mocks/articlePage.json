@@ -9,10 +9,10 @@
         "created": "2026-10-09T20:11:32.896+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/d9c0c259-663b-41c0-a197-70226c82bc8a"
+            "href": "http://localhost:8080/api/articles/d9c0c259-663b-41c0-a197-70226c82bc8a"
           },
           "article": {
-            "href": "http://localhost:8080/articles/d9c0c259-663b-41c0-a197-70226c82bc8a"
+            "href": "http://localhost:8080/api/articles/d9c0c259-663b-41c0-a197-70226c82bc8a"
           }
         }
       },
@@ -24,10 +24,10 @@
         "created": "2026-10-09T20:11:36.122+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/ddae6512-d51a-4a0f-a355-b8b2d05f3958"
+            "href": "http://localhost:8080/api/articles/ddae6512-d51a-4a0f-a355-b8b2d05f3958"
           },
           "article": {
-            "href": "http://localhost:8080/articles/ddae6512-d51a-4a0f-a355-b8b2d05f3958"
+            "href": "http://localhost:8080/api/articles/ddae6512-d51a-4a0f-a355-b8b2d05f3958"
           }
         }
       },
@@ -39,10 +39,10 @@
         "created": "2026-10-09T20:11:37.806+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/8de2dcee-d389-453e-a5f4-57d43d243f97"
+            "href": "http://localhost:8080/api/articles/8de2dcee-d389-453e-a5f4-57d43d243f97"
           },
           "article": {
-            "href": "http://localhost:8080/articles/8de2dcee-d389-453e-a5f4-57d43d243f97"
+            "href": "http://localhost:8080/api/articles/8de2dcee-d389-453e-a5f4-57d43d243f97"
           }
         }
       },
@@ -54,10 +54,10 @@
         "created": "2026-10-09T20:11:39.089+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/8e8e8bcf-cd16-4ad2-b235-fdfe591261a0"
+            "href": "http://localhost:8080/api/articles/8e8e8bcf-cd16-4ad2-b235-fdfe591261a0"
           },
           "article": {
-            "href": "http://localhost:8080/articles/8e8e8bcf-cd16-4ad2-b235-fdfe591261a0"
+            "href": "http://localhost:8080/api/articles/8e8e8bcf-cd16-4ad2-b235-fdfe591261a0"
           }
         }
       },
@@ -69,10 +69,10 @@
         "created": "2026-10-09T20:11:39.994+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/f3f4c7bf-f6e9-46b8-8d71-6a2aee682d4f"
+            "href": "http://localhost:8080/api/articles/f3f4c7bf-f6e9-46b8-8d71-6a2aee682d4f"
           },
           "article": {
-            "href": "http://localhost:8080/articles/f3f4c7bf-f6e9-46b8-8d71-6a2aee682d4f"
+            "href": "http://localhost:8080/api/articles/f3f4c7bf-f6e9-46b8-8d71-6a2aee682d4f"
           }
         }
       },
@@ -84,10 +84,10 @@
         "created": "2026-10-09T20:11:40.718+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/8ea0a21f-0cd1-4098-bf88-901c2bcfc02f"
+            "href": "http://localhost:8080/api/articles/8ea0a21f-0cd1-4098-bf88-901c2bcfc02f"
           },
           "article": {
-            "href": "http://localhost:8080/articles/8ea0a21f-0cd1-4098-bf88-901c2bcfc02f"
+            "href": "http://localhost:8080/api/articles/8ea0a21f-0cd1-4098-bf88-901c2bcfc02f"
           }
         }
       },
@@ -99,10 +99,10 @@
         "created": "2026-10-09T20:11:41.325+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/e4cb5382-f963-4951-b528-220e0376e4fb"
+            "href": "http://localhost:8080/api/articles/e4cb5382-f963-4951-b528-220e0376e4fb"
           },
           "article": {
-            "href": "http://localhost:8080/articles/e4cb5382-f963-4951-b528-220e0376e4fb"
+            "href": "http://localhost:8080/api/articles/e4cb5382-f963-4951-b528-220e0376e4fb"
           }
         }
       },
@@ -114,10 +114,10 @@
         "created": "2026-10-09T20:11:41.932+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/9ef5fe48-2086-416c-be94-69f1b954863e"
+            "href": "http://localhost:8080/api/articles/9ef5fe48-2086-416c-be94-69f1b954863e"
           },
           "article": {
-            "href": "http://localhost:8080/articles/9ef5fe48-2086-416c-be94-69f1b954863e"
+            "href": "http://localhost:8080/api/articles/9ef5fe48-2086-416c-be94-69f1b954863e"
           }
         }
       },
@@ -129,10 +129,10 @@
         "created": "2026-10-09T20:11:42.499+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/1e391d74-0468-4c47-9a55-a5b9ff3f4a51"
+            "href": "http://localhost:8080/api/articles/1e391d74-0468-4c47-9a55-a5b9ff3f4a51"
           },
           "article": {
-            "href": "http://localhost:8080/articles/1e391d74-0468-4c47-9a55-a5b9ff3f4a51"
+            "href": "http://localhost:8080/api/articles/1e391d74-0468-4c47-9a55-a5b9ff3f4a51"
           }
         }
       },
@@ -144,10 +144,10 @@
         "created": "2026-10-09T20:11:43.080+00:00",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/articles/e5d40e16-c2f4-4824-a1a9-0d645aab5767"
+            "href": "http://localhost:8080/api/articles/e5d40e16-c2f4-4824-a1a9-0d645aab5767"
           },
           "article": {
-            "href": "http://localhost:8080/articles/e5d40e16-c2f4-4824-a1a9-0d645aab5767"
+            "href": "http://localhost:8080/api/articles/e5d40e16-c2f4-4824-a1a9-0d645aab5767"
           }
         }
       }
@@ -155,16 +155,16 @@
   },
   "_links": {
     "first": {
-      "href": "http://localhost:8080/articles?page=0&size=10"
+      "href": "http://localhost:8080/api/articles?page=0&size=10"
     },
     "self": {
-      "href": "http://localhost:8080/articles?page=0&size=10"
+      "href": "http://localhost:8080/api/articles?page=0&size=10"
     },
     "next": {
-      "href": "http://localhost:8080/articles?page=1&size=10"
+      "href": "http://localhost:8080/api/articles?page=1&size=10"
     },
     "last": {
-      "href": "http://localhost:8080/articles?page=3&size=10"
+      "href": "http://localhost:8080/api/articles?page=3&size=10"
     },
     "profile": {
       "href": "http://localhost:8080/profile/articles"

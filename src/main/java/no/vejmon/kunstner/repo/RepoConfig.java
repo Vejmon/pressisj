@@ -14,5 +14,6 @@ public class RepoConfig implements RepositoryRestConfigurer {
             RepositoryRestConfiguration config, CorsRegistry corsRegistry){
         config.exposeIdsFor(Article.class);
         config.setDefaultPageSize(10);
+        config.setBasePath("/api");
     }
 }

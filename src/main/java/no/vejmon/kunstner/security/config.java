@@ -16,7 +16,7 @@ public class config {
     public SecurityFilterChain mySecurityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/admin/**", "/api/**").authenticated()
+                        .requestMatchers("/admin/**").authenticated()
                         .anyRequest().permitAll()
                 )
                 .logout(withDefaults())
