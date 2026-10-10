@@ -73,6 +73,7 @@ tasks.register('copyVueBuild', Copy) {
     dependsOn npmBuild
     from "${projectDir}/ui/dist"
     into "${projectDir}/src/main/resources/static"
+    exclude('mockServiceWorker.js')
 }
 
 processResources {
