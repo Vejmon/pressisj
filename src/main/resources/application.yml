@@ -27,6 +27,18 @@ spring:
     user:
       name: admin
       password: ${ADMIN_USER_PW}
+  mail:
+    password: ${EMAIL_PW:}
+    username: ${EMAIL_USER:}
+    host: smtp.gmail.com
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
 
 logging:
   file:
@@ -39,7 +51,14 @@ logging:
   level:
     root: INFO
 
-
+navigation:
+  pages: # sets available pages in links banner
+    - name: "Hjem"
+      url: "/"
+    - name: "Nyheter"
+      url: "/nyheter"
+    - name: "Kontakt"
+      url: "/kontakt"
 ---
 
 spring:

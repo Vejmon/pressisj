@@ -17,10 +17,10 @@ const props = defineProps({
           Hjem
         </router-link>
         <router-link to="/nyheter" class="link-hover hover:text-gray-300">
-          nyheter
+|          Nyheter
         </router-link>
         <router-link to="/kontakt" class="link-hover hover:text-gray-300">
-          kontakt
+          Kontakt
         </router-link>
       </div>
       <div>

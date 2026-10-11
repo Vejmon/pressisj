@@ -56,9 +56,14 @@ tasks.register('cleanStatic', Delete) {
     delete "${projectDir}/src/main/resources/static"
 }
 
+tasks.register('cleanTemplates', Delete) {
+    dependsOn cleanStatic
+    delete "${projectDir}/src/main/resources/templates"
+}
+
 
 tasks.register('npmDoInstall', NpmTask) {
-    dependsOn cleanStatic
+    dependsOn cleanTemplates
     workingDir = file("${projectDir}/ui")
     args = ['install']
 }
@@ -71,9 +76,16 @@ tasks.register('npmBuild', NpmTask) {
 
 tasks.register('copyVueBuild', Copy) {
     dependsOn npmBuild
-    from "${projectDir}/ui/dist"
-    into "${projectDir}/src/main/resources/static"
-    exclude('mockServiceWorker.js')
+    into "${projectDir}/src/main/resources"
+
+    from("${projectDir}/ui/dist") {
+        exclude('mockServiceWorker.js')
+        exclude('index.html')
+        into 'static'
+    }
+    from("${projectDir}/ui/dist/index.html") {
+        into 'templates'
+    }
 }
 
 processResources {
