@@ -30,6 +30,13 @@ spring:
       name: admin
       password: ${ADMIN_USER_PW}
   mail:
+    message: |
+      Takk for att du tar kontakt!
+      Under ser du meldingen slik vi har mottat den.
+      Vi svarer så fort vi kan, ha en fin dag videre.
+    signatur: |
+      --
+      ikke svar denne mailen
     password: ${EMAIL_PW:}
     username: ${EMAIL_USER:}
     inbox: ${EMAIL_INBOX:}
