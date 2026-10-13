@@ -17,7 +17,11 @@ public class config {
         return http
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/admin/**").authenticated()
+                        .requestMatchers("/open/**").permitAll()
                         .anyRequest().permitAll()
+                )
+                .csrf(csrf ->
+                        csrf.ignoringRequestMatchers("/open/**")
                 )
                 .logout(withDefaults())
                 .formLogin( withDefaults())

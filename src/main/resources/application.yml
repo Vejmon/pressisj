@@ -1,4 +1,6 @@
 server:
+  error:
+    include-stacktrace: always
   shutdown: immediate
 
 spring:
@@ -30,6 +32,7 @@ spring:
   mail:
     password: ${EMAIL_PW:}
     username: ${EMAIL_USER:}
+    inbox: ${EMAIL_INBOX:}
     host: smtp.gmail.com
     port: 587
     properties:
@@ -64,6 +67,24 @@ navigation:
 spring:
   config:
     activate:
+      on-profile: test
+  security:
+    user:
+      password: admin
+  flyway:
+    password: password
+  datasource:
+    password: password
+
+---
+
+server:
+  error:
+    include-stacktrace: never
+
+spring:
+  config:
+    activate:
       on-profile: production
 
 springdoc:
@@ -71,17 +92,3 @@ springdoc:
     enabled: false
   swagger-ui:
     enabled: false
-
----
-
-spring:
-    config:
-        activate:
-            on-profile: test
-    security:
-      user:
-        password: admin
-    flyway:
-      password: password
-    datasource:
-      password: password

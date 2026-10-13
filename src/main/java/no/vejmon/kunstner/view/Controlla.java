@@ -17,7 +17,6 @@ public class Controlla {
         names = nav.getPages().stream()
                 .map(Page::getName)
                 .collect(Collectors.joining(", "));
-
     }
 
     @GetMapping("/admin")
@@ -29,6 +28,6 @@ public class Controlla {
     public String index(Model model) {
         model.addAttribute("pages", names);
         return "index";
-
     }
+
 }
