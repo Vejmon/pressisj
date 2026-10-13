@@ -24,7 +24,7 @@ public class Controlla {
         model.addAttribute("pages", names + ", Admin");
         return "index";}
 
-    @GetMapping("/")
+    @GetMapping(value = {"/", "/index"})
     public String index(Model model) {
         model.addAttribute("pages", names);
         return "index";

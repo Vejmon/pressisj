@@ -2,6 +2,7 @@ package no.vejmon.kunstner.view;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -13,20 +14,20 @@ import org.springframework.web.servlet.resource.NoResourceFoundException;
 public class AdviseConfig {
 
     @ExceptionHandler(NoResourceFoundException.class)
-    public Object handleServletException(ServletException ex, HttpServletRequest request) {
+    public Object handleServletException(ServletException ex, HttpServletRequest request) throws NoResourceFoundException {
         return handleNotFound(request);
     }
 
-    private Object handleNotFound(HttpServletRequest request) {
+    private Object handleNotFound(HttpServletRequest request) throws NoResourceFoundException {
         boolean isGet = "GET".equalsIgnoreCase(request.getMethod());
         String accept = request.getHeader("Accept");
         boolean wantsHtml = accept != null && accept.contains("text/html");
 
         if (isGet && wantsHtml) {
-            ModelAndView mav = new ModelAndView("forward:/index.html");
+            ModelAndView mav = new ModelAndView("forward:/index");
             mav.setStatus(HttpStatus.OK);
             return mav;
         }
-        return null;
+        throw new NoResourceFoundException(HttpMethod.valueOf(request.getMethod()), request.getPathInfo());
     }
 }
