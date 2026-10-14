@@ -1,5 +1,4 @@
 <script setup>
-
 const props = defineProps({
   pages: {
     type: Object,
@@ -18,9 +17,7 @@ const props = defineProps({
         <router-link v-for="(v,k) in pages" :to="v" :key="k" class="link-hover hover:text-gray-300">
           {{ k }}
         </router-link>
-      </div>
-      <div>
-      </div>
+    </div>
   </div>
 </template>
 

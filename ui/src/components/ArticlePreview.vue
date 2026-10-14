@@ -1,5 +1,7 @@
 <script setup>
 import { useTemplateRef, onMounted, onUnmounted, computed, ref} from 'vue';
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faCalendarCheck } from "@fortawesome/free-regular-svg-icons";
 
 const props = defineProps({
   id: {
@@ -20,8 +22,8 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  link: {
-    type: String,
+  _links: {
+    type: Object,
     required: false,
   }
 });
@@ -32,7 +34,6 @@ const overflows = ref(false)
 
 function check() {
   if (!articleText.value) return
-  const outer = articleText.value.parentElement
   overflows.value = articleText.value.scrollHeight > articleText.value.parentElement.clientHeight
 }
 
@@ -48,11 +49,9 @@ onUnmounted(() => observer?.disconnect())
 
 
 <template>
-  <div class="flex flex-col p-2 max-w-2xl ring-2 rounded-lg min-w-60"
-       :class="props.link ? 'link-hover' : ''"
-       @click="props.link ? window.location.href = props.link : ''"
-  >
-    <div class="flex flex-col p-2 rounded-lg">
+  <div class="flex flex-col p-2 max-w-2xl ring-2 rounded-lg min-w-60 hover-with-trigger">
+    <div class="flex flex-col p-2 rounded-lg trigger"
+         @click="window.location.href = `article/${props.id}`">
       <div class="text-2xl font-bold">
         {{ props.title }}
       </div>
@@ -61,12 +60,19 @@ onUnmounted(() => observer?.disconnect())
       </div>
       <div
            class="rounded-lg max-h-32 overflow-y-hidden"
-           :class="overflows ? 'gradient-fade' : ''"
-      >
+           :class="overflows ? 'gradient-fade' : ''">
         <div ref="articleText" class="text-base">
           {{ props.text }}
         </div>
       </div>
+    </div>
+    <div v-if="props._links?.links"
+         class="border-dotted border-t-2 border-gray-200 my-2">
+      <ul class="p-2">
+        <li class="link-hover" @click="window.location.href = '/hello'">
+          <FontAwesomeIcon :icon="faCalendarCheck"></FontAwesomeIcon> link
+        </li>
+      </ul>
     </div>
   </div>
 </template>

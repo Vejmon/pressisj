@@ -14,6 +14,9 @@
     .link-hover {
         @apply cursor-pointer hover:scale-103 transition-transform duration-300
     }
+    .hover-with-trigger {
+        @apply has-[.trigger:hover]:scale-103 has-[.trigger:hover]:cursor-pointer transition-transform duration-300
+    }
 
 }
 
