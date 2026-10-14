@@ -1,5 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from "@/views/Home/Home.vue";
+import {createRouter, createWebHistory} from 'vue-router'
+import Home from "@/views/Home.vue";
 import Liste from '@/views/Liste.vue';
 import Landing from '@/views/Landing.vue';
 import Kontakt from '@/views/Kontakt.vue';

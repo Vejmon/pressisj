@@ -1,6 +1,6 @@
 import './assets/main.css'
 
-import {createApp, markRaw} from 'vue'
+import {createApp} from 'vue'
 import {createPinia} from 'pinia'
 
 export async function prepareApp() {
@@ -11,6 +11,9 @@ export async function prepareApp() {
         await worker.start({
             onUnhandledRequest: 'bypass', // Avoid noise in the console
         })
+        const pages = {"Hjem": "/", "Nyheter": "/nyheter", "Kontakt": "/kontakt"}
+        document.getElementById("pagesMeta")
+            .setAttribute("content", JSON.stringify(pages))
     }
 }
 

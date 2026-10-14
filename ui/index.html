@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">Oda er kunstner</title>
-    <meta name="pages" th:content="${pages}" content="home">
-
+    <meta id="pagesMeta" name="pages" th:content="${pages}" content="{'Hjem': '/'}">
+    <meta id="isAdmin" name="isAdmin" th:content="${isAdmin} ?: false" content="false">
   </head>
   <body>
     <div id="app"></div>

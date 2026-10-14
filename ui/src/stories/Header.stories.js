@@ -5,24 +5,19 @@ export default {
   component: Header,
   tags: ['autodocs'],
   argTypes: {
-    to: {
-      control: 'text',
-      description: 'Link destination for the logo',
-      table: {
-        defaultValue: { summary: '/' }
-      }
+    pages: {
     }
   }
 };
 
 export const Default = {
   args: {
-    to: '/'
+    pages: {"Hjem": "/", "Nyheter": "/nyheter", "Kontakt": "/kontakt"}
   }
 };
 
-export const CustomLink = {
+export const Admin = {
   args: {
-    to: '/gallery'
+    pages: {"Hjem": "/", "Nyheter": "/nyheter", "Kontakt": "/kontakt", "Admin": "/admin"}
   }
 };
