@@ -1,7 +1,6 @@
 <script setup>
 import { useTemplateRef, onMounted, onUnmounted, computed, ref} from 'vue';
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faCalendarCheck } from "@fortawesome/free-regular-svg-icons";
+import ShowIcon from "@/components/ShowIcon.vue";
 
 const props = defineProps({
   id: {
@@ -66,11 +65,11 @@ onUnmounted(() => observer?.disconnect())
         </div>
       </div>
     </div>
-    <div v-if="props._links?.links"
+    <div
          class="border-dotted border-t-2 border-gray-200 my-2">
       <ul class="p-2">
         <li class="link-hover" @click="window.location.href = '/hello'">
-          <FontAwesomeIcon :icon="faCalendarCheck"></FontAwesomeIcon> link
+          <ShowIcon icon="faLink"></ShowIcon> link
         </li>
       </ul>
     </div>
