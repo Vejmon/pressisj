@@ -1,7 +1,7 @@
 <script setup>
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import {faFacebook, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 // imports of used icons must reflect available icons at /articles/available-icons
 
 const props = defineProps({
