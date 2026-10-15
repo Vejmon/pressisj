@@ -2,152 +2,205 @@
   "_embedded": {
     "articles": [
       {
-        "id": "71a1ef6f-b6a4-451b-9e61-83152b8f5a8a",
+        "id": "152fa018-9ebd-47e0-8323-797da0561be7",
         "title": "Enda en tittel",
-        "subtitle": null,
+        "subtitle": "wow en liten forklaring!",
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:43.681+00:00",
+        "created": "2026-10-15T19:51:09.231+00:00",
+        "links": [
+          {
+            "name": "hej",
+            "href": "/url",
+            "faIcon": "faFacebook"
+          }
+        ],
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/articles/71a1ef6f-b6a4-451b-9e61-83152b8f5a8a"
+            "href": "/api/articles/152fa018-9ebd-47e0-8323-797da0561be7"
           },
           "article": {
-            "href": "http://localhost:8080/api/articles/71a1ef6f-b6a4-451b-9e61-83152b8f5a8a"
+            "href": "/api/articles/152fa018-9ebd-47e0-8323-797da0561be7"
           }
         }
       },
       {
-        "id": "0f776f5e-ce21-4dc8-b7d7-0bb1ad1c8d26",
+        "id": "674c220e-b5ed-4453-8e50-49317a0fbcc1",
         "title": "Enda en tittel",
-        "subtitle": null,
+        "subtitle": "wow en liten forklaring!",
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:44.242+00:00",
+        "created": "2026-10-15T19:51:09.585+00:00",
+        "links": [
+          {
+            "name": "hej",
+            "href": "/url",
+            "faIcon": "faFacebook"
+          }
+        ],
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/articles/0f776f5e-ce21-4dc8-b7d7-0bb1ad1c8d26"
+            "href": "/api/articles/674c220e-b5ed-4453-8e50-49317a0fbcc1"
           },
           "article": {
-            "href": "http://localhost:8080/api/articles/0f776f5e-ce21-4dc8-b7d7-0bb1ad1c8d26"
+            "href": "/api/articles/674c220e-b5ed-4453-8e50-49317a0fbcc1"
           }
         }
       },
       {
-        "id": "491f227d-0afa-4c07-9d79-5ff62098c752",
+        "id": "74b5ae5b-80ae-4298-a49b-6ae9892e5868",
         "title": "Enda en tittel",
-        "subtitle": null,
+        "subtitle": "wow en liten forklaring!",
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:11:44.801+00:00",
+        "created": "2026-10-15T19:51:09.994+00:00",
+        "links": [
+          {
+            "name": "hej",
+            "href": "/url",
+            "faIcon": "faFacebook"
+          }
+        ],
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/articles/491f227d-0afa-4c07-9d79-5ff62098c752"
+            "href": "/api/articles/74b5ae5b-80ae-4298-a49b-6ae9892e5868"
           },
           "article": {
-            "href": "http://localhost:8080/api/articles/491f227d-0afa-4c07-9d79-5ff62098c752"
+            "href": "/api/articles/74b5ae5b-80ae-4298-a49b-6ae9892e5868"
           }
         }
       },
       {
-        "id": "89335bff-d10b-42a5-b970-f36ad072f71b",
+        "id": "9e55904a-7d24-456b-8a4b-d7646a87b089",
         "title": "Enda en tittel",
-        "subtitle": null,
+        "subtitle": "wow en liten forklaring!",
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:12:26.481+00:00",
+        "created": "2026-10-15T19:51:10.368+00:00",
+        "links": [
+          {
+            "name": "hej",
+            "href": "/url",
+            "faIcon": "faFacebook"
+          }
+        ],
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/articles/89335bff-d10b-42a5-b970-f36ad072f71b"
+            "href": "/api/articles/9e55904a-7d24-456b-8a4b-d7646a87b089"
           },
           "article": {
-            "href": "http://localhost:8080/api/articles/89335bff-d10b-42a5-b970-f36ad072f71b"
+            "href": "/api/articles/9e55904a-7d24-456b-8a4b-d7646a87b089"
           }
         }
       },
       {
-        "id": "67d744de-33ca-4d3f-971e-3e809291c3de",
+        "id": "b7861d5b-2242-4726-9a3f-d61e59f21fbd",
         "title": "Enda en tittel",
-        "subtitle": null,
+        "subtitle": "wow en liten forklaring!",
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:12:26.978+00:00",
+        "created": "2026-10-15T19:51:14.152+00:00",
+        "links": [
+          {
+            "name": "hej",
+            "href": "/url",
+            "faIcon": "faLink"
+          }
+        ],
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/articles/67d744de-33ca-4d3f-971e-3e809291c3de"
+            "href": "/api/articles/b7861d5b-2242-4726-9a3f-d61e59f21fbd"
           },
           "article": {
-            "href": "http://localhost:8080/api/articles/67d744de-33ca-4d3f-971e-3e809291c3de"
+            "href": "/api/articles/b7861d5b-2242-4726-9a3f-d61e59f21fbd"
           }
         }
       },
       {
-        "id": "5376f3f3-bc02-49a9-bba2-06fc9740314b",
+        "id": "3b7e0dab-1578-4570-9398-33d5d975d562",
         "title": "Enda en tittel",
-        "subtitle": null,
+        "subtitle": "wow en liten forklaring!",
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:12:27.456+00:00",
+        "created": "2026-10-15T19:51:14.579+00:00",
+        "links": [
+          {
+            "name": "hej",
+            "href": "/url",
+            "faIcon": "faLink"
+          }
+        ],
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/articles/5376f3f3-bc02-49a9-bba2-06fc9740314b"
+            "href": "/api/articles/3b7e0dab-1578-4570-9398-33d5d975d562"
           },
           "article": {
-            "href": "http://localhost:8080/api/articles/5376f3f3-bc02-49a9-bba2-06fc9740314b"
+            "href": "/api/articles/3b7e0dab-1578-4570-9398-33d5d975d562"
           }
         }
       },
       {
-        "id": "3291b771-f2bc-4d8c-9027-ea27095832f7",
+        "id": "4a2ff074-e5b7-4b58-b98f-bcb798c76a39",
         "title": "Enda en tittel",
-        "subtitle": null,
+        "subtitle": "wow en liten forklaring!",
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:12:27.903+00:00",
+        "created": "2026-10-15T19:51:14.921+00:00",
+        "links": [
+          {
+            "name": "hej",
+            "href": "/url",
+            "faIcon": "faLink"
+          }
+        ],
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/articles/3291b771-f2bc-4d8c-9027-ea27095832f7"
+            "href": "/api/articles/4a2ff074-e5b7-4b58-b98f-bcb798c76a39"
           },
           "article": {
-            "href": "http://localhost:8080/api/articles/3291b771-f2bc-4d8c-9027-ea27095832f7"
+            "href": "/api/articles/4a2ff074-e5b7-4b58-b98f-bcb798c76a39"
           }
         }
       },
       {
-        "id": "a5e76a04-a557-41ba-903e-35e45418d5f9",
+        "id": "3500bc6b-3cf6-4217-8afa-1e0d34ef92f2",
         "title": "Enda en tittel",
-        "subtitle": null,
+        "subtitle": "wow en liten forklaring!",
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:12:28.371+00:00",
+        "created": "2026-10-15T19:51:26.095+00:00",
+        "links": [
+          {
+            "name": "Velkommen til mitt show!",
+            "href": "/url",
+            "faIcon": "faLink"
+          }
+        ],
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/articles/a5e76a04-a557-41ba-903e-35e45418d5f9"
+            "href": "/api/articles/3500bc6b-3cf6-4217-8afa-1e0d34ef92f2"
           },
           "article": {
-            "href": "http://localhost:8080/api/articles/a5e76a04-a557-41ba-903e-35e45418d5f9"
+            "href": "/api/articles/3500bc6b-3cf6-4217-8afa-1e0d34ef92f2"
           }
         }
       },
       {
-        "id": "803374b8-1e5f-438a-8318-630efec9bc71",
+        "id": "d8c797c5-f06e-4b08-9570-b713ea9e2ed2",
         "title": "Enda en tittel",
-        "subtitle": null,
+        "subtitle": "wow en liten forklaring!",
         "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:12:28.822+00:00",
-        "_links": {
-          "self": {
-            "href": "http://localhost:8080/api/articles/803374b8-1e5f-438a-8318-630efec9bc71"
+        "created": "2026-10-15T19:52:18.037+00:00",
+        "links": [
+          {
+            "name": "mitt show!",
+            "href": "/url",
+            "faIcon": "faLink"
           },
-          "article": {
-            "href": "http://localhost:8080/api/articles/803374b8-1e5f-438a-8318-630efec9bc71"
+          {
+            "name": "min Facebook side!",
+            "href": "/url",
+            "faIcon": "faFacebook"
           }
-        }
-      },
-      {
-        "id": "15cfee73-34d9-4726-be76-a99f8865bd6e",
-        "title": "Enda en tittel",
-        "subtitle": null,
-        "text": "Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...Her kommer det masse informasjon! igjen og igjen...",
-        "created": "2026-10-09T20:12:29.252+00:00",
+        ],
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/articles/15cfee73-34d9-4726-be76-a99f8865bd6e"
+            "href": "/api/articles/d8c797c5-f06e-4b08-9570-b713ea9e2ed2"
           },
           "article": {
-            "href": "http://localhost:8080/api/articles/15cfee73-34d9-4726-be76-a99f8865bd6e"
+            "href": "/api/articles/d8c797c5-f06e-4b08-9570-b713ea9e2ed2"
           }
         }
       }
@@ -155,25 +208,28 @@
   },
   "_links": {
     "first": {
-      "href": "http://localhost:8080/api/articles?page=0&size=10"
+      "href": "/api/articles?page=0&size=10"
     },
     "prev": {
-      "href": "http://localhost:8080/api/articles?page=0&size=10"
+      "href": "/api/articles?page=0&size=10"
     },
     "self": {
-      "href": "http://localhost:8080/api/articles?page=1&size=10"
+      "href": "/api/articles?page=1&size=10"
     },
     "last": {
-      "href": "http://localhost:8080/api/articles?page=3&size=10"
+      "href": "/api/articles?page=1&size=10"
     },
     "profile": {
-      "href": "http://localhost:8080/profile/articles"
+      "href": "/api/profile/articles"
+    },
+    "search": {
+      "href": "/api/articles/search"
     }
   },
   "page": {
     "size": 10,
-    "totalElements": 34,
-    "totalPages": 4,
+    "totalElements": 19,
+    "totalPages": 2,
     "number": 1
   }
 }

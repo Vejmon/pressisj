@@ -1,6 +1,6 @@
 import {http, HttpResponse} from 'msw'
-import articles from '@/mocks/articlePage.json' with {type: "json"};
-import articles2 from '@/mocks/articlePage2.json' with {type: "json"};
+import articles from '@/mocks/articlePage.json' with {type: 'json'};
+import articles2 from '@/mocks/articlePage2.json' with {type: 'json'};
 
 export const handlers = [
   // Intercepts requests to the backend
@@ -12,7 +12,7 @@ export const handlers = [
       status: 'UP'
     })
   }),
-  http.get("/api/articles", async ({request}) => {
+  http.get("/api/articles/search/created", async ({request}) => {
     let page = new URL(request.url).searchParams.get("page");
     await new Promise(resolve => setTimeout(resolve, 300));
     if (!page || page === "0"){

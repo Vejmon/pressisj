@@ -21,6 +21,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  links:{
+    type: Array,
+    required: false,
+  },
   _links: {
     type: Object,
     required: false,
@@ -65,11 +69,10 @@ onUnmounted(() => observer?.disconnect())
         </div>
       </div>
     </div>
-    <div
-         class="border-dotted border-t-2 border-gray-200 my-2">
-      <ul class="p-2">
-        <li class="link-hover" @click="window.location.href = '/hello'">
-          <ShowIcon icon="faLink"></ShowIcon> link
+    <div v-if="props.links.length !== 0">
+      <ul class="p-2 pt-5 pl-5">
+        <li v-for="link in links" :key="link.name" class="link-hover pt-2 w-fit" @click="window.location.href=`${link.href}`">
+          <ShowIcon :icon=link.faIcon></ShowIcon> {{ link.name }}
         </li>
       </ul>
     </div>

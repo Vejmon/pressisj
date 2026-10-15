@@ -12,7 +12,7 @@
         @apply bg-black ring-2 ring-white rounded-lg w-4/5 xl:w-full p-1 pl-2
     }
     .link-hover {
-        @apply cursor-pointer hover:scale-103 transition-transform duration-300
+        @apply cursor-pointer hover:scale-110 transition-transform duration-300
     }
     .hover-with-trigger {
         @apply has-[.trigger:hover]:scale-103 has-[.trigger:hover]:cursor-pointer transition-transform duration-300

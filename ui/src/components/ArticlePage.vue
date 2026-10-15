@@ -28,8 +28,7 @@ const data = ref(props._embedded.articles)
 const loadMore = async () => {
   if (isLoading.value) return;
   isLoading.value = true;
-  const url = new URL(currentLinks.value.next.href)
-  await getData(url.pathname + url.search)
+  await getData(currentLinks.value.next.href)
       .then((newItems) => {
         currentLinks.value = newItems._links
         data.value.push(...newItems._embedded.articles)
@@ -71,7 +70,8 @@ onMounted(() =>{
         <ArticlePreview v-bind="item" :link="item._links.self.href"/>
     </li>
   </ul>
-  <div v-if="stopLoading">Ingen flere nyheter</div>
+  <div v-if="error" class="w-full text-center text-red-400">Hups, her har det skjedd en feil!</div>
+  <div class="w-full text-center" v-if="stopLoading">Ingen flere nyheter...</div>
 </template>
 
 

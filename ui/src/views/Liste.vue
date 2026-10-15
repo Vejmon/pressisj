@@ -12,7 +12,7 @@ const error = ref(false);
 const currentPage = ref(articleStore.getComplete().value);
 onMounted( async () => {
   if (currentPage.value != null) return;
-  await getData("/api/articles")
+  await getData("/api/articles/search/created")
     .then(data => {
       error.value = false;
       currentPage.value = data
