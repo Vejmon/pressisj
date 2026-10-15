@@ -1,5 +1,6 @@
 <script setup>
-import { useTemplateRef, onMounted, onUnmounted, computed, ref} from 'vue';
+import { useTemplateRef, onMounted, onUnmounted, ref} from 'vue';
+import { getPrintableDate } from "@/utils/api.js";
 import ShowIcon from "@/components/ShowIcon.vue";
 
 const props = defineProps({
@@ -21,6 +22,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  created: {
+    type: String,
+    required: true,
+  },
   links:{
     type: Array,
     required: false,
@@ -34,7 +39,7 @@ const props = defineProps({
 let observer = null
 const articleText = useTemplateRef('articleText')
 const overflows = ref(false)
-
+const printableDate = ref(getPrintableDate(new Date(props.created)))
 function check() {
   if (!articleText.value) return
   overflows.value = articleText.value.scrollHeight > articleText.value.parentElement.clientHeight
@@ -55,8 +60,13 @@ onUnmounted(() => observer?.disconnect())
   <div class="flex flex-col p-2 max-w-2xl ring-2 rounded-lg min-w-60 hover-with-trigger">
     <div class="flex flex-col p-2 rounded-lg trigger"
          @click="window.location.href = `article/${props.id}`">
-      <div class="text-2xl font-bold">
-        {{ props.title }}
+      <div class="flex flex-row justify-between align-middle">
+        <div class="text-2xl font-bold">
+          {{ props.title }}
+        </div>
+        <div>
+          {{printableDate}}
+        </div>
       </div>
       <div class="text-base pt-2 pb-2">
         {{ props.subtitle }}

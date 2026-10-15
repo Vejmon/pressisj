@@ -23,3 +23,16 @@ export const getData = async (url = '') => {
             throw e;
         })
 }
+
+export const getPrintableDate = (date) => {
+    const formatter = new Intl.DateTimeFormat('no-NO', {
+        day: '2-digit',
+        month: 'long',
+        year: '2-digit'
+    });
+    const parts = Object.fromEntries(
+        formatter.formatToParts(date).filter(p => p.type !== 'literal').map(p => [p.type, p.value])
+    )
+    return `${parts.day} ${parts.month} ${parts.year}`
+
+}
