@@ -1,5 +1,6 @@
 package no.vejmon.kunstner.config;
 
+import lombok.NonNull;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Links;
 import org.springframework.hateoas.RepresentationModel;
@@ -11,6 +12,7 @@ import java.net.URI;
 @Component
 public class RelativeHrefRepresentationProcessor implements RepresentationModelProcessor<RepresentationModel<?>> {
 
+    @NonNull
     @Override
     public RepresentationModel<?> process(RepresentationModel<?> model) {
         Links absoluteLinks = model.getLinks();
