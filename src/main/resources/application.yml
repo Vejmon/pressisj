@@ -69,6 +69,15 @@ navigation:
       url: "/nyheter"
     - name: "Kontakt"
       url: "/kontakt"
+
+springdoc:
+  show-login-endpoint: true
+  swagger-ui:
+    csrf:
+      enabled: true
+      cookie-name: XSRF-TOKEN
+      header-name: X-XSRF-TOKEN
+
 ---
 
 spring:
