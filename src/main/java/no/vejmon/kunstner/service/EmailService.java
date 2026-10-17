@@ -1,5 +1,6 @@
 package no.vejmon.kunstner.service;
 
+import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import no.vejmon.kunstner.models.ContactSchema;import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
@@ -24,12 +25,25 @@ public class EmailService {
     @Value("${spring.mail.message}")
     private String message;
     private final JavaMailSender sender;
+    @Value("${spring.mail.enabled:true}")
+    private boolean enabled;
+
 
     public EmailService(JavaMailSender sender) {
         this.sender = sender;
     }
 
+    @PostConstruct
+    public void init() {
+        log.info("Email Service enabled: {}", (enabled && mail != null));
+    }
+
     public void sendEmailFromContactSchema(ContactSchema contactSchema){
+        if (!enabled) {
+            log.warn("Email disabled, not sent to, [name: {}, email: {}, msg: {}]",
+                    contactSchema.getName(), contactSchema.getEmail(), contactSchema.getMessage());
+            return;
+        }
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom(mail);
         message.setTo(contactSchema.getEmail());

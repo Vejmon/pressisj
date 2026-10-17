@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-10-17T20:23:25.779+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Validation failed for object='contactSchema'. Error count: 2",
+  "errors": [
+    {
+      "objectName": "contactSchema",
+      "field": "email",
+      "rejectedValue": null,
+      "codes": [
+        "NotBlank.contactSchema.email",
+        "NotBlank.email",
+        "NotBlank.java.lang.String",
+        "NotBlank"
+      ],
+      "arguments": [
+        {
+          "codes": [
+            "contactSchema.email",
+            "email"
+          ],
+          "arguments": null,
+          "defaultMessage": "email",
+          "code": "email"
+        }
+      ],
+      "defaultMessage": "En gyldig epost er påkrevd",
+      "bindingFailure": false,
+      "code": "NotBlank"
+    },
+    {
+      "objectName": "contactSchema",
+      "field": "name",
+      "rejectedValue": null,
+      "codes": [
+        "NotBlank.contactSchema.name",
+        "NotBlank.name",
+        "NotBlank.java.lang.String",
+        "NotBlank"
+      ],
+      "arguments": [
+        {
+          "codes": [
+            "contactSchema.name",
+            "name"
+          ],
+          "arguments": null,
+          "defaultMessage": "name",
+          "code": "name"
+        }
+      ],
+      "defaultMessage": "Et navn er påkrevd",
+      "bindingFailure": false,
+      "code": "NotBlank"
+    },
+    {
+      "objectName": "contactSchema",
+      "field": "message",
+      "rejectedValue": null,
+      "codes": [
+        "NotBlank.contactSchema.message",
+        "NotBlank.message",
+        "NotBlank.java.lang.String",
+        "NotBlank"
+      ],
+      "arguments": [
+        {
+          "codes": [
+            "contactSchema.message",
+            "message"
+          ],
+          "arguments": null,
+          "defaultMessage": "message",
+          "code": "message"
+        }
+      ],
+      "defaultMessage": "En melding er påkrevd",
+      "bindingFailure": false,
+      "code": "NotBlank"
+    }
+  ],
+  "path": "/open/email"
+}

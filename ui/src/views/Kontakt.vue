@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import EmailSchema from "@/components/EmailSchema.vue";
+
 
 </script>
 
 <template>
- <div> hej fra Kontakt </div>
+  <EmailSchema />
 </template>
 
 <style scoped>
