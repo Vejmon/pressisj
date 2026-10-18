@@ -82,7 +82,7 @@ onUnmounted(() => observer?.disconnect())
     <div v-if="props.links.length !== 0">
       <ul class="p-2 pt-5 pl-5">
         <li v-for="link in links" :key="link.name" class="link-hover pt-2 w-fit" @click="window.location.href=`${link.href}`">
-          <ShowIcon :icon=link.faIcon></ShowIcon> {{ link.name }}
+          <a><ShowIcon :icon=link.faIcon></ShowIcon> {{ link.name }}</a>
         </li>
       </ul>
     </div>

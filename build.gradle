@@ -53,7 +53,9 @@ tasks {
 }
 
 tasks.register('cleanStatic', Delete) {
-    delete "${projectDir}/src/main/resources/static"
+    delete fileTree("${projectDir}/src/main/resources/static/assets") {
+        // exclude("name.jpg")
+    }
 }
 
 tasks.register('cleanTemplates', Delete) {

@@ -89,3 +89,78 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+p {
+  @apply my-4 leading-7;
+}
+
+/* Headings */
+h1 { @apply text-3xl font-extrabold mt-6 mb-4; }
+h2 { @apply text-2xl font-semibold mt-6 mb-3; }
+h3 { @apply text-xl font-semibold mt-5 mb-2.5; }
+h4 { @apply text-lg font-medium mt-4 mb-2; }
+h5 { @apply text-base font-medium mt-3 mb-1.5; }
+h6 { @apply text-sm font-medium uppercase tracking-wide mt-2 mb-1; }
+
+
+/* Blockquote */
+blockquote {
+  @apply border-l-4 border-stone-400 pl-4 italic text-gray-50 bg-stone-700 p-3 rounded;
+}
+
+/* Horizontal rule */
+hr { @apply border-t border-gray-200 my-6; height: 0; }
+
+/* Code blocks and inline code */
+pre {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-md overflow-auto text-sm font-mono my-4;
+  white-space: pre; /* preserve spacing */
+}
+pre code {
+  @apply bg-transparent p-0 text-sm font-mono;
+  white-space: pre;
+}
+code {
+  @apply font-mono text-sm bg-stone-900 px-1 py-0.5 rounded;
+}
+
+/* Tables (GFM) */
+table { @apply w-full table-auto border-collapse my-4; }
+thead th {
+  @apply bg-stone-700 font-medium text-left px-3 py-2 border border-gray-200 border-b-4;
+}
+tbody td {
+  @apply px-3 py-2 border border-gray-200 align-top;
+}
+/* Zebra striping: different styling for every other row */
+tbody tr:nth-child(even) td {
+  @apply bg-stone-800;
+}
+tbody tr:nth-child(odd) td {
+  @apply bg-stone-950;
+}
+
+/* Optional: hover state for rows */
+tbody tr:hover td {
+  @apply bg-stone-700;
+}
+
+/* Images */
+img { @apply max-w-full h-auto rounded; display: block; margin: 0.5rem 0; }
+
+/* Links */
+a:hover { @apply underline; }
+
+/* Inline formatting */
+strong, b { @apply font-semibold; }
+em, i { @apply italic; }
+del { @apply line-through text-gray-500; }
+
+/* br has no extra style */
+
+/* Small utility for nested code blocks in tables or lists */
+td code, th code { @apply px-0 py-0.5 rounded; }
+
+/* Accessibility: focus outlines for interactive elements inside content */
+a:focus, button:focus {
+  @apply outline-none ring-2 ring-indigo-300 rounded;
+}

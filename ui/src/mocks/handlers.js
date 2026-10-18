@@ -1,7 +1,9 @@
 import {http, HttpResponse} from 'msw'
+
 import articles from '@/mocks/articlePage.json' with {type: 'json'};
 import articles2 from '@/mocks/articlePage2.json' with {type: 'json'};
 import failedForm from '@/mocks/failed_email.json' with {type: 'json'};
+import homeMd from '@/mocks/home.md?raw';
 
 export const handlers = [
   // Intercepts requests to the backend
@@ -15,6 +17,9 @@ export const handlers = [
     return HttpResponse.json({
       status: 'UP'
     })
+  }),
+  http.get('/home.md', async ({request}) => {
+    return HttpResponse.text(homeMd)
   }),
   http.get("/api/articles/search/created", async ({request}) => {
     let page = new URL(request.url).searchParams.get("page");

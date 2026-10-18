@@ -3,7 +3,8 @@ HELP.md
 .env
 build/
 **/dist/**
-**/resources/static/**
+**/resources/static/assets/**
+**/resources/static/img/**
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -42,3 +43,5 @@ out/
 .vscode/
 **/node_modules/**
 /src/main/resources/templates/index.html
+!/src/main/resources/static/home.md
+
