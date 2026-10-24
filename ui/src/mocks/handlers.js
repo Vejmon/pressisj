@@ -4,9 +4,12 @@ import articles from '@/mocks/articlePage.json' with {type: 'json'};
 import articles2 from '@/mocks/articlePage2.json' with {type: 'json'};
 import failedForm from '@/mocks/failed_email.json' with {type: 'json'};
 import homeMd from '@/mocks/home.md?raw';
+import homeJpg from '@/assets/home.jpg';
+
+const imageBytes = await fetch(homeJpg).then((res) => res.arrayBuffer());
 
 export const handlers = [
-  // Intercepts requests to the backend
+  // Intercepts requests to the backend used in vite 'npm run dev' and storybook 'npm run storybook' for this project
   http.post('/', async ({request}) => {
     return HttpResponse.json({status: "hello"});
   }),
@@ -20,6 +23,12 @@ export const handlers = [
   }),
   http.get('/home.md', async ({request}) => {
     return HttpResponse.text(homeMd)
+  }),
+  http.get('/home.jpg', async ({request}) => {
+    return HttpResponse.arrayBuffer(imageBytes, {
+      status: 200,
+      headers: { 'content-type': 'image/png' },
+    })
   }),
   http.get("/api/articles/search/created", async ({request}) => {
     let page = new URL(request.url).searchParams.get("page");

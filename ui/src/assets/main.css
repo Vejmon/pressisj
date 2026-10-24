@@ -6,3 +6,17 @@
   font-weight: normal;
 
 }
+.bgimg {
+  /* The image used */
+  background-image: url("home.jpg");
+
+  /* Full height */
+  height: 100dvh;
+  width: 100dvw;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}

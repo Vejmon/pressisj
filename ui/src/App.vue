@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <main class="w-full flex flex-col items-center pt-10">
+  <div class="w-full flex flex-col items-center pt-10">
     <router-view class="w-full content-stretch"/>
-  </main>
+  </div>
 </template>
 
 <style scoped>

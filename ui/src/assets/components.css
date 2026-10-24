@@ -1,6 +1,6 @@
 @layer components {
     .app-header {
-        @apply absolute top-0 left-0 min-h-10 bg-stone-950 ring-2 ring-stone-700 rounded-b-lg w-full;
+        @apply absolute top-0 left-0 min-h-10 bg-stone-800 ring-2 ring-stone-950 rounded-b-lg w-full;
     }
     .input-form {
         @apply flex flex-col gap-4 p-4 xl:absolute
