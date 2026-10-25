@@ -51,6 +51,19 @@ spring:
             enable: true
             required: true
 
+clients:
+  domeneshop:
+    url: https://api.domeneshop.no/v0
+    token: ${DOMENESHOP_TOKEN:}
+    secret: ${DOMENESHOP_SECRET:}
+
+domeneshop:
+  lookup:
+    ip: # urls where the server's ip is available
+      - https://api.ipify.org # ?format=json
+      - https://api-ipv4.ip.sb/ip
+      - https://ipv4.icanhazip.com/
+
 logging:
   file:
     name: logs/app.log
@@ -93,6 +106,11 @@ spring:
   datasource:
     password: password
 
+clients:
+  domeneshop:
+    url: testyurl
+    token: testytoken
+    secret: testysecret
 ---
 
 server:
